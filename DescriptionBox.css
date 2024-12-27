@@ -1,0 +1,55 @@
+.descriptionbox {
+    margin: 120px 170px;
+}
+
+.descriptionbox-navigator {
+    display: flex;
+    gap: 15px; /* Added gap for spacing between the tabs */
+}
+
+.descriptionbox-nav-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    width: 171px;
+    height: 70px;
+    border: 1px solid #d0d0d0;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Added smooth transition for hover and active states */
+}
+
+.descriptionbox-nav-box.active {
+    background-color: #FF5A5A; /* Active state background */
+    color: white; /* Text color for active state */
+    border-color: #FF5A5A; /* Border color for active state */
+}
+
+.descriptionbox-nav-box .fade {
+    background: #FBFBFB;
+    color: #555;
+}
+
+.descriptionbox-nav-box:hover {
+    background-color: #f8f8f8; /* Slight hover effect */
+}
+
+.descriptionbox-description {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    border: 1px solid #D0D0D0;
+    padding: 48px;
+    padding-bottom: 70px;
+    margin-top: 20px; /* Space between the navigator and the content */
+}
+
+.descriptionbox-reviews {
+    display: none; /* Initially hidden, only shown when "Reviews" is clicked */
+}
+
+.descriptionbox-description p {
+    font-size: 16px;
+    color: #555;
+}
